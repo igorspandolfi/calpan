@@ -3,12 +3,64 @@ body, ul, h2, p {
     padding: 0;
 }
 
+a , .btn {
+    font-size: 1rem;
+}
+
+.main {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;    
+}
+
+.row-btn {
+    display: block;
+    text-align: center;    
+}
+
+input {
+    padding: .5rem 1rem;
+    margin: 10px;
+    width: 30vh;
+        
+}
+
+.form {
+    display: 100%;
+    padding: auto;
+    margin: auto;
+    margin-top: 10vh;
+    font-family: sans-serif;
+    color: #859CA6;
+    width: 60vh;
+    height: 25vh;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 30px;        
+}
+
 a {
     text-decoration: none;
     font-family: sans-serif;
     color: #859CA6;
     border-radius: 5px;  
     padding: .5rem 1rem; 
+}
+
+.btn-voltar, .btn-acessar {
+    font-family: sans-serif;
+    color: #859CA6;
+    border-radius: 5px;  
+    padding: .5rem 1rem;
+    border: 1px solid #859CA6;
+    background-color: transparent; 
+    text-align: center;
     
 }
 
@@ -21,7 +73,7 @@ p {
     font-style: italic;
 }
 
-a:hover {
+a:hover, .btn:hover {
     background-color: #859CA6;
     color: #142B40;    
 }
@@ -31,8 +83,6 @@ a:hover {
     font-weight: bold;    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
 
 header {
     box-sizing: border-box;
@@ -55,8 +105,19 @@ header {
     padding: .5rem;    
 }
 
+#menu {
+    padding: .5rem;
+    align-items: center;
+}
+
 #btn-mobile {
     display: none;
+}
+
+#pesquisar {
+    border: none;
+    border-radius: 5px;
+    
 }
 
 @media (max-width: 600px){
@@ -86,6 +147,12 @@ header {
         padding: 1rem;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);        
+    }
+
+    #pesquisar {        
+        padding: .7rem;        
+        margin: 0 1rem 1rem 1rem;
+        width: calc(100% - 3.3rem);        
     }
 
     #btn-mobile {
