@@ -91,7 +91,9 @@ header {
     height: 70px;
     padding: 1rem;
     justify-content: space-between;
-    background: #142B40;
+    background: #142B40;  
+    position: sticky; 
+    top: 0; 
 }
 
 #menu {
@@ -119,6 +121,32 @@ header {
     border-radius: 5px;
     
 }
+
+.row-main {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.fakeimg {
+    box-sizing: border-box;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    
+}
+
+.main {
+    flex: calc(80% - 10px);
+    padding: 10px;
+}
+
+.side {
+    flex: calc(20% - 10px);
+    padding: 10px;
+}
+
+
 
 @media (max-width: 600px){
    
