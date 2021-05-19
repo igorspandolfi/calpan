@@ -97,11 +97,12 @@ header {
     display: flex;
     align-items: center;
     height: 90px;
-    padding: 1rem;
+    padding: .5rem .5rem .5rem 1rem;
     justify-content: space-between;
     background: white;  
     position: sticky; 
-    top: 0; 
+    top: 0;
+    
 }
 
 #menu {
@@ -180,7 +181,7 @@ header {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 90px;
         right: 0px;
         background: white;;
         z-index: 1000;
@@ -192,7 +193,7 @@ header {
     }
 
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: calc(100vh - 90px);
         visibility: visible;
         overflow-y: auto;
     }
