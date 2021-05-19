@@ -29,38 +29,40 @@ input {
     padding: .5rem 1rem;
     margin: 10px;
     width: 30vh;
-        
+    border: 1px solid #232484;
+    border-radius: 5px;        
 }
 
 .form {
     display: 100%;
     padding: auto;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-family: sans-serif;
-    color: #859CA6;
+    color: #232484;
     width: 60vh;
     height: 25vh;
-    border: 1px solid rgba(0,0,0,.4);
+    border: 1px solid #232484;
     border-radius: 30px;        
 }
 
 a {
     text-decoration: none;
     font-family: sans-serif;
-    color: #859CA6;
+    color: #232484;
     border-radius: 5px;  
     padding: .5rem 1rem; 
 }
 
 .btn-voltar, .btn-acessar {
     font-family: sans-serif;
-    color: #859CA6;
+    color: #232484;
     border-radius: 5px;  
     padding: .5rem 1rem;
-    border: 1px solid #859CA6;
+    border: 1px solid #232484;
     background-color: transparent; 
     text-align: center;
+    cursor: pointer;
     
 }
 
@@ -73,25 +75,26 @@ p {
     font-style: italic;
 }
 
-a:hover, .btn:hover {
-    background-color: #859CA6;
-    color: #142B40;    
+#logo:hover {
+    border: 1px solid #232484;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#logo {
-    font-size: 1.3rem;
+a:hover, .btn:hover {
+    background-color: #232484;
+    color: white;
     font-weight: bold;    
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 90px;
     padding: 1rem;
     justify-content: space-between;
-    background: #142B40;  
+    background: white;  
     position: sticky; 
     top: 0; 
 }
@@ -104,7 +107,11 @@ header {
 
 #menu a {
     display: block;
-    padding: .5rem;    
+    padding: .5rem;
+    border: 1px solid #232484;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;    
 }
 
 #menu {
@@ -116,11 +123,6 @@ header {
     display: none;
 }
 
-#pesquisar {
-    border: none;
-    border-radius: 5px;
-    
-}
 
 .row-main {
     display: flex;
@@ -132,8 +134,23 @@ header {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
-    height: 200px;
-    
+    height: 200px;    
+}
+
+.fakeimg-main {
+    box-sizing: border-box;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;    
+}
+
+.fakeimg-side {
+    box-sizing: border-box;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 100vh;    
 }
 
 .main {
@@ -146,7 +163,10 @@ header {
     padding: 10px;
 }
 
-
+#logo {    
+    height: 100%;
+    width: 150px;   
+}
 
 @media (max-width: 600px){
    
@@ -157,12 +177,13 @@ header {
         width: 100%;
         top: 70px;
         right: 0px;
-        background: #314759;
+        background: white;;
         z-index: 1000;
         transition: .6s;
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
+        
     }
 
     #nav.active #menu {
@@ -173,8 +194,10 @@ header {
 
     #menu a {
         padding: 1rem;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);        
+        margin: 0 1rem 1rem 1rem;        
+        width: calc(100% - 3.9rem);
+        border: none;
+              
     }
 
     #pesquisar {        
@@ -191,7 +214,7 @@ header {
         background: none;
         cursor: pointer;
         gap: .5rem;
-        color: #859CA6;
+        color: #232484;
     }
 
     #hamburger {
