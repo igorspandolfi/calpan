@@ -12,29 +12,24 @@
 </head>
 <body>    
     <header id="header">        
-        <img id="logo" src="img/logo.svg" onclick="window.location='index.html'">        
+        <div class="div-logo"><img id="logo" src="img/logo.svg" onclick="window.location='index.html'"></div>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-expanded="false">Menu
                 <span id="hamburger"></span>
             </button>
             <ul id="menu" role="menu">
-                <li><input type="text" id="pesquisar" name="pesquisar" placeholder="Pesquisar"></li>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="conteudo/sobre.html">Sobre</a></li>
-                <li><a href="conteudo/produtos.html">Produtos</a></li>
-                <li><a href="conteudo/portfolio.html">Protfólio</a></li>
-                <li><a href="conteudo/contato.html">Contato</a></li>
-                <li><a href="conteudo/login.html">Login<i class="fas fa-sign-in-alt" style="margin-left: 5px;"></i></a></li>
+                <li><input type="text" id="pesquisar" name="pesquisar" placeholder="O que você procura?"></li>
+                <li><a href="conteudo/contato.html" style="width: 70px;">Contato<i class="fas fa-phone" style="margin-left: 5px;"></i></a></li>
+                <li><a href="conteudo/ajuda.html" style="width: 70px;">Ajuda<i class="fas fa-question-circle" style="margin-left: 5px;"></i></a></li>
+                <li><a href="carrinho/carrinho.html" style="width: 75px;">Carrinho<i class="fas fa-shopping-cart" style="margin-left: 5px;"></i></a></li>
+                <li><a href="conteudo/login.html" style="width: 70px;">Login<i class="fas fa-sign-in-alt" style="margin-left: 5px;"></i></a></li>
             </ul>
         </nav>
     </header>
-    <div class="carrocel"> 
+    <div class="slide"> 
         <div class="fakeimg"></div>
     </div>
-    <div class="row-main">
-        <div class="side"> 
-            <div class="fakeimg-side"><h1>Side</h1></div>
-        </div>
+    <div class="row-main">        
         <div class="main"> 
             <div class="fakeimg-main"><h1>Main</h1></div>
         </div>        
