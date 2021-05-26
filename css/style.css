@@ -6,6 +6,7 @@ body, ul, h1, h2, p {
 
 .main {
     box-sizing: border-box;
+    flex: 100%;
 }
 
 .row {
@@ -19,28 +20,43 @@ body, ul, h1, h2, p {
 
 .row-btn {
     display: block;
-    text-align: center;    
+    text-align: center; 
+       
 }
 
-input {
-    padding: .8rem 1rem;
-    margin: 10px;
-    width: 50vh;
+input {       
     border: 1px solid #232484;
-    border-radius: 5px;       
+    border-radius: 4px;
+    
+}
+
+input:focus {
+    background-color: #eee;
+    
+}
+
+#pesquisar {
+    box-sizing: border-box;    
+    background-repeat: no-repeat;        
+    font-size: 16px;
+    padding: .5rem 40px; 
+          
+}
+
+.input-form {
+    box-sizing: border-box;
+    padding: .5rem;
+    width: 25%;
+    margin: .5rem;
 }
 
 .form {
-    display: 100%;
-    padding: auto;
+    display: 100%;    
     margin: auto;
     margin-top: 5vh;
     font-family: sans-serif;
     color: #232484;
-    width: 60vh;
-    height: 25vh;
-    border: 1px solid #232484;
-    border-radius: 30px;        
+          
 }
 
 a {
@@ -51,16 +67,19 @@ a {
     font-size: 13px; 
 }
 
-.btn-voltar, .btn-acessar {
+
+.btn-acessar, .btn-voltar {
+    text-decoration: none;
     font-family: sans-serif;
-    color: #232484;
+    color: white;
     border-radius: 5px;  
-    padding: .5rem 1rem;
-    border: 1px solid #232484;
-    background-color: transparent; 
+    padding: 16px 32px;    
+    background-color: #232484; 
     text-align: center;
     cursor: pointer;
-    
+    border: none;
+    font-weight: bold;
+    margin: 20px; 
 }
 
 h1 {
@@ -80,10 +99,14 @@ p {
     cursor: pointer;
 }
 
-a:hover, .btn:hover {
+a:hover {
     cursor: pointer;
-    font-weight: bold;
-         
+    font-weight: bold;         
+}
+
+.btn:hover {
+    background-color: #e00b13;
+    
 }
 
 header {
@@ -98,6 +121,10 @@ header {
     top: 0;
     width: 70%;  
     margin: auto;  
+}
+
+#nav {
+    width: 100%;
 }
 
 #menu {
@@ -158,9 +185,6 @@ header {
     height: 100vh;    
 }
 
-.main {
-    flex: 100%;
-}
 
 #logo {    
     height: 100%;
